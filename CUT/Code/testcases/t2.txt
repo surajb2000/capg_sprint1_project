@@ -1,0 +1,10 @@
+Project ID-PROJ002
+Project Title-Distributed Algorithms for Multi-Resource Allocation
+Keyword-Artificial Intelligence
+Keyword-Computer technology
+Keyword-Intelligent system
+Abstract-Novel network infrastructures require the distri-bution of computing and network resource control to meetstringent requirements in terms of latency, reliability and bitrate.5G systems bring a key novelty in systems design that it the‘network slice’as a new resource provisioning entity. A networkslice is meant to serve end-to-end services as a composition ofdifferent network and system resources as radio, link, storage andcomputing resources. Conventionally, each resource is managedby a distinct decision-maker, platform, provider, orchestrator orcontroller. Naturally, centralized slice orchestration approachesare proposed in the literature, where a multi-domain orchestratorallocates the resources, for instance using a multi-resourceallocation rule. Nonetheless, while simplifying the algorithmicapproach, centralization can come at the expense of scalabilityand performance. In this paper, we propose new ways to dis-tribute the slice multi-resource resource allocation problem, usingcascade and parallel resource allocations that are functionallycompatible with novel software platforms.
+Author-Stephane Rovedakis
+Author-Stefano Secci
+Reference-Article=Multi-Resource Allocation forNetwork Slicing under Service Level Agreements
+Reference-Chapter=Network slicing games: Enabling customization inmulti-tenant networks.
