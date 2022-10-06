@@ -1,29 +1,26 @@
-Key-Computer Aided Chemical Engineering
-PROJ001
-Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
+Key-Artificial Intelligence
 PROJ002
-Optimisation frameworks for integrated planning with allocation of transportation resources for industrial gas supply chains
-
-
-Key-Computation Models
+Distributed Algorithms for Mult
 PROJ001
-Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 
 
-Key-Pipeline Scheduling
-PROJ001
-Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
-
-
-Key-Transportation
-PROJ001
-Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
+Key-Computer technology
 PROJ002
-Optimisation frameworks for integrated planning with allocation of transportation resources for industrial gas supply chains
+Distributed Algorithms for Mult
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 
 
-Key-Computers & Chemical Engineering
+Key-Intelligent system
 PROJ002
-Optimisation frameworks for integrated planning with allocation of transportation resources for industrial gas supply chains
+Distributed Algorithms for Mult
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+
+
+Key-Signal Processing
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 
 

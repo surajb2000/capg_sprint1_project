@@ -5,7 +5,7 @@ flags = -lpthread -g
 
 keywordSearch: main.o keyword.o
 	${CC} ${ofolder}/main.o ${ofolder}/keyword.o ${ofolder}/output.o -o ${ofolder}/keywordSearch.out ${flags}
-	./${ofolder}/keywordSearch.out testcases/testCase1.txt testcases/testCase2.txt
+	./${ofolder}/keywordSearch.out testcases/t1.txt testcases/t2.txt
 
 main.o:
 	${CC} -c ${sfolder}/main.c -o ${ofolder}/main.o ${flags}
