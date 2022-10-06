@@ -170,6 +170,28 @@ int validation(char *tempfile) {
   return 0;
 }
 
+void cleanFunc() {
+  sp *temp;
+  while (projectll != NULL) {
+    temp = projectll;
+    projectll = projectll->next;
+
+    free(temp);
+  }
+
+  skw *temp1;
+  while (keywordll != NULL) {
+    temp1 = keywordll;
+    keywordll = keywordll->next;
+
+    pthread_mutex_destroy(&(temp1->lock));
+    free(temp1);
+  }
+}
+
+
+/*
+
 int result_Valid(char *key) {
   FILE *fptr = fopen("../data/result.txt", "r");
   if (!fptr) printf("\nError: Result file not found");
@@ -199,21 +221,4 @@ int result_Valid(char *key) {
   return count;
 }
 
-void cleanFunc() {
-  sp *temp;
-  while (projectll != NULL) {
-    temp = projectll;
-    projectll = projectll->next;
-
-    free(temp);
-  }
-
-  skw *temp1;
-  while (keywordll != NULL) {
-    temp1 = keywordll;
-    keywordll = keywordll->next;
-
-    pthread_mutex_destroy(&(temp1->lock));
-    free(temp1);
-  }
-}
+*/
