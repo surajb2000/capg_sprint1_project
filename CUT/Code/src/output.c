@@ -7,11 +7,13 @@
 void print_output(skw *temp) {
     while (temp != NULL) {
         printf("\n%s", temp->key);
-
-        for (int i = 0; i < temp->index; ++i) {
+        int a = temp->index;
+        
+        for (int i = 0; i < a; ++i) {
             printf("\n%s", temp->projectIds[i]);
             printf("\n%s", temp->projectTitle[i]);
         }
+
         printf("\n\n");
         temp = temp->next;
     }
@@ -33,6 +35,7 @@ int write_output(skw *temp) {
             fprintf(fptr, "\n%s", temp->projectIds[i]);
             fprintf(fptr, "\n%s", temp->projectTitle[i]);
         }
+
         fprintf(fptr, "\n\n\n");
 
         temp = temp->next;
