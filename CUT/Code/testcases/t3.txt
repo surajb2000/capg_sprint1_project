@@ -1,0 +1,12 @@
+Project ID-PROJ003
+Project Title-International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+Keyword-Artificial Intelligence
+Keyword-Hybrid Architecture
+Keyword-Intelligent system
+Keyword-Signal Processing
+Abstract- We construct some standard orthogonal L-fuzzy fixed-point findings for almost orthogonal Θ-contraction in the context of orthogonal complete ms using the orthogonal L-fuzzy mapping (OLF-mapping). We prove some non-trivial examples to supporting our main results. Also, we establish a theoretical computer science application to domain of words.
+Author-Khaleel Ahmad
+Author-Umar Ishtiaq
+Author-Jawad Afzal
+Reference-Article=A new generalization of the Banach contraction principle
+Reference-Chapter=u, Application and Research of C Language Programming Examination System Based on B/S,Third International Symposium on Information Processing
