@@ -5,10 +5,12 @@
 
 #include "../header/header.h"
 
-sp *projectll = NULL;
-skw *keywordll = NULL;
+sp *projectll;
+skw *keywordll;
 
 int main(int argc, char **argv) {
+    projectll = NULL;
+    keywordll = NULL;
 
     int filecount = argc - 1;
 
@@ -24,18 +26,19 @@ int main(int argc, char **argv) {
     filter and create new linklist containing valid filenames.
     */
     pthread_t pthreads[filecount];
-    for (int i = 0; i < filecount; i++) {
+    int i;
+    for (i = 0; i < filecount; i++) {
         int ret = pthread_create(&pthreads[i], NULL, extract_project_details, (void *)(argv[i + 1]));
 
         // check if thread created for return value
-        if (ret) {
+        if (ret != 0) {
             printf("\nError! Thread creation falied! Return code from is: %d\n", ret);
             exit(0);
         }
     }
 
     // Wait for pthread_join before resuming the program.
-    for (int i = 0; i < filecount; i++) {
+    for (i = 0; i < filecount; i++) {
         pthread_join(pthreads[i], NULL);
     }
 

@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 #include "../header/header.h"
 
 //Function to print
 void print_output(skw *temp) {
     while (temp != NULL) {
         printf("\n%s", temp->key);
-        int a = temp->index;
-        
-        for (int i = 0; i < a; ++i) {
+        int i;
+        for (i = 0; i < temp->index; ++i) {
             printf("\n%s", temp->projectIds[i]);
             printf("\n%s", temp->projectTitle[i]);
         }
@@ -30,8 +30,8 @@ int write_output(skw *temp) {
 
     while (temp != NULL) {
         fprintf(fptr, "Key-%s", temp->key);
-
-        for (int i = 0; i < temp->index; ++i) {
+        int i;
+        for (i = 0; i < temp->index; ++i) {
             fprintf(fptr, "\n%s", temp->projectIds[i]);
             fprintf(fptr, "\n%s", temp->projectTitle[i]);
         }
@@ -41,6 +41,6 @@ int write_output(skw *temp) {
         temp = temp->next;
     }
 
-    fclose(fptr);
+    (void)fclose(fptr);
     return EXIT_SUCCESS;
 }
