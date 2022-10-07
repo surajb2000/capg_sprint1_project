@@ -11,7 +11,7 @@
 typedef struct project {
     char projectId[STR_SIZE];
     char projectTitle[STR_SIZE];
-    struct project *next;
+    // struct project *next;
 } sp;
 
 typedef struct keyword {
@@ -32,6 +32,8 @@ void keywordSearch(sp *, char *, skw **);
 int validation(char *tempfile);
 int result_Valid(char *key);
 void cleanFunc();
+void updateNode(sp *, skw *);
+skw *createNode(sp *m, char token[]);
 
 void print_output(skw *);
 int write_output(skw *);

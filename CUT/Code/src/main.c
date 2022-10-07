@@ -5,11 +5,11 @@
 
 #include "../header/header.h"
 
-sp *projectll;
+// sp *projectll;
 skw *keywordll;
 
 int main(int argc, char **argv) {
-    projectll = NULL;
+    // projectll = NULL;
     keywordll = NULL;
 
     int filecount = argc - 1;
