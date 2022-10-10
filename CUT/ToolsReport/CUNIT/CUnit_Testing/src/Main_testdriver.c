@@ -27,7 +27,7 @@ return CU_get_error();
 
 CU_pSuite pSuite2 = NULL;
 
-pSuite2 = CU_add_suite("Suite Valid file", init_suite_result, clean_suite_result);
+pSuite2 = CU_add_suite("Suite Result Valid file", init_suite_result, clean_suite_result);
 
 
 if (NULL == pSuite2)
