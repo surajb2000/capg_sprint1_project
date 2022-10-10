@@ -1,0 +1,14 @@
+ gcov output.gcno
+File 'src/output.c'
+Lines executed:91.30% of 23
+Creating 'output.c.gcov'
+
+ gcov keyword.gcno
+File 'src/keyword.c'
+Lines executed:78.95% of 95
+Creating 'keyword.c.gcov'
+
+ gcov main.gcno
+File 'src/main.c'
+Lines executed:85.71% of 21
+Creating 'main.c.gcov'
