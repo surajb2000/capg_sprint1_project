@@ -23,14 +23,11 @@ int validation(char *tempfile) {
             proT += 1;
         else if (strcmp(token, keyword_str) == 0)
             keyw += 1;
-
-        if (proID && proT && keyw)
-            break;
     }
 
     (void)fclose(fptr);
 
-    if (proID && proT && keyw)
+    if (proID == 1 && proT == 1 && keyw >= 1)
         return 1;
 
     return 0;
