@@ -11,6 +11,7 @@ void *extract_project_details(void *tempfile) {
     // Check for file error
     if (fptr == NULL) {
         printf("\nError! file not found: %s\n", (char *)tempfile);
+        return;
     }
     // Check for Valid text file according to guides lines
     else if (validation((char *)tempfile) == 0) {
