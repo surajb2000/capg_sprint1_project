@@ -3,13 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-int validation(char *filename) {
-
-    FILE *fptr = fopen((char *)filename, "r");
-
-    // to do validations
-    if (!fptr) {
-        printf("Error! file not found: %s\n", (char *)filename);
+int validation(char *tempfile) {
+    FILE *fptr = fopen((char *)tempfile, "r");
+    if (fptr == NULL) {
+        printf("File Error");
         exit(0);
     }
 
@@ -18,21 +15,23 @@ int validation(char *filename) {
 
     char str[SIZE], *token;
     while (fgets(str, SIZE, fptr)) {
-
         token = strtok(str, "-");
-        while (token != NULL) {
-            if (strcmp(token, project_id_str) == 0)
-                proID += 1;
-            else if (strcmp(token, project_title_str) == 0)
-                proT += 1;
-            else if (strcmp(token, keyword_str) == 0)
-                keyw += 1;
-            token = strtok(NULL, "-");
-        }
+
+        if (strcmp(token, project_id_str) == 0)
+            proID += 1;
+        else if (strcmp(token, project_title_str) == 0)
+            proT += 1;
+        else if (strcmp(token, keyword_str) == 0)
+            keyw += 1;
+
+        if (proID && proT && keyw)
+            break;
     }
-    fclose(fptr);
+
+    (void)fclose(fptr);
+
     if (proID && proT && keyw)
         return 1;
-    else
-        return 0;
+
+    return 0;
 }
