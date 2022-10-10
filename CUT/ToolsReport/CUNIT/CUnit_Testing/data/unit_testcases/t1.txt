@@ -1,0 +1,11 @@
+Project ID-PROJ001
+Project Title-Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+Keyword-Artificial Intelligence
+Keyword-Computer technology
+Keyword-Intelligent system
+Keyword-Signal Processing
+Abstract-At present, computer technology is not limited to the network but to many aspects of spread out, including artificial intelligence technology, signal processing technology, speech recognition technology, and so on which have been better developed, and music teaching has also obtained certain achievements. If the detected speech data have no other clutter in the speech, then the endpoint detection can achieve ideal results. The music education system includes the development of four dimensions: WEB terminal, mobile terminal, web interface, and database. Using the powerful functions of computers, such as computing functions and processing functions, combined with advanced intelligent technology and related equipment, the intelligent learning model based on computer technology is established. It can be applied in college teaching, combined with the actual needs of current college music teaching, corresponding to the curriculum and teaching plan issued by the school, combined with the design of online learning system and reasonable use of computer technology to build a vocal music education system. The intelligent system can improve the requirements of vocal music education management level, teaching organization ability, and teaching platform operation ability.
+Author-Junqing Bai
+Author-Kirti Yenkie
+Reference-Book=Optimal Control Theory: Applications to Management Science and Artificial Intelligence
+Reference-Article=Evaluation of physical education teaching based onweb embedded system and virtual reality

@@ -1,0 +1,10 @@
+Keyword-Computational thinking
+Keyword-diagrammatic reasoning
+Keyword-Proof-educational programme
+Keyword-Trusted hardware platform
+Abstract-Computational thinking (CT) and diagrammatic reasoning (DR) are important competencies from the perspective of both Computer Science and Engineering education. CT is often described as a critically important attitude or skill set for all students regardless of the educational program in which they are enrolled. Diagrammatic reasoning is commonly referred to as a student's ability to think logically and solve complex problems. Accordingly, these two competencies are closely related and both skills are parallelly linked to several curriculum subjects (with preponderance in the case of STEM disciplines) during the educational process. Consequently, one might conclude that even without an explicit focus on them, students might develop these abilities latently as they advance with the K-12 current curriculum. We have proposed to test this assumption. In the experiment, 137 first-year students were involved in six different Computer Science and Engineering educational programs. Students were invited to participate in a CT and a DR test. We were particularly interested in possible correlations between the results of the two tests. Our results confirmed that computational thinking and diagrammatic reasoning are closely related abilities. We also found that CT, DR, and students' prior programming experience positively correlate with their first course exam results in Computer Science. 
+Author-Pálma Rozalia Osztián
+Author-Zoltan Katai
+Author-Osztián Erika
+Reference-Article=Concept and PrototypeTool Flow for Online Veriﬁcation
+Reference-Chapter=Symposium on Principles of Programming Languages
