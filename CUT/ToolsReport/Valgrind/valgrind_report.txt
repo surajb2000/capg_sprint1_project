@@ -1,0 +1,16 @@
+==132860== Memcheck, a memory error detector
+==132860== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==132860== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==132860== Command: ./bin/keywordSearch.out
+==132860==
+Please provide  filename as argument!
+Usage ./main <Research Papaer file1> <Research Papaer file2> ...
+==132860==
+==132860== HEAP SUMMARY:
+==132860==     in use at exit: 0 bytes in 0 blocks
+==132860==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==132860==
+==132860== All heap blocks were freed -- no leaks are possible
+==132860==
+==132860== For lists of detected and suppressed errors, rerun with: -s
+==132860== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
