@@ -1,31 +1,31 @@
-Keyword-Artificial Intelligence
+Keyword-Artificial Intelligence-
 PROJ001
  :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ002
  :Distributed Algorithms for Mult
 PROJ003
  :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-Keyword-Computer technology
+Keyword-Computer technology-
 PROJ001
  :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ002
  :Distributed Algorithms for Mult
-Keyword-Intelligent system
+Keyword-Intelligent system-
 PROJ001
  :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ002
  :Distributed Algorithms for Mult
 PROJ003
  :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-Keyword-Signal Processing
+Keyword-Signal Processing-
 PROJ001
  :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ003
  :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-Keyword-C language programming
+Keyword-C language programming-
 PROJ004
  :Research and Development of C Language Programming Experiment Assistant Management Platform Based on Hybrid Architecture
-Keyword-Hybrid Architecture
+Keyword-Hybrid Architecture-
 PROJ004
  :Research and Development of C Language Programming Experiment Assistant Management Platform Based on Hybrid Architecture
 PROJ003
