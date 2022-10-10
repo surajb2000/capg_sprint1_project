@@ -7,7 +7,7 @@
 Suite: Suite Valid file
   Test: test of valid() in Sunny cases ...passed
   Test: test of valid() in Rainy cases ...passed
-Suite: Suite Valid file
+Suite: Suite Result Valid file
   Test: test of result_valid() in Sunny cases ...passed
   Test: test of result_Valid() in Rainy cases ...passed
 

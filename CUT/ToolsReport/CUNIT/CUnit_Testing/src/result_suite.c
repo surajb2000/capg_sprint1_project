@@ -10,9 +10,9 @@ int clean_suite_result(void) {
 }
 
 void testSunnyCases2(void) {
-    CU_ASSERT_EQUAL(result_Valid("Computer Aided Chemical Engineering"), 3);
-    CU_ASSERT_EQUAL(result_Valid("Pipeline Scheduling"), 2);
-    CU_ASSERT_EQUAL(result_Valid("Transportation"), 3);
+    CU_ASSERT_EQUAL(result_Valid("Artificial Intelligence"), 3);
+    CU_ASSERT_EQUAL(result_Valid("Computer technology"), 2);
+    CU_ASSERT_EQUAL(result_Valid("Intelligent system"), 3);
 }
 void testRainyCases2(void) {
     CU_ASSERT_EQUAL(result_Valid("Transporthhhhh"), 0);

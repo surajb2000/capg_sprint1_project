@@ -1,27 +1,35 @@
-Keyword-Computer Aided Chemical Engineering-
+Keyword-Artificial Intelligence-
 PROJ001
- :Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
+ :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ002
- :Optimisation frameworks for integrated planning with allocation of transportation resources for industrial gas supply chains
+ :Distributed Algorithms for Mult
 PROJ003
- :To study the integration planning and fetching graphical anlysis for different pipeline scheduling techniques.
-Keyword-Computation Models-
+ :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+Keyword-Computer technology-
 PROJ001
- :Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
-Keyword-Pipeline Scheduling-
-PROJ001
- :Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
-PROJ003
- :To study the integration planning and fetching graphical anlysis for different pipeline scheduling techniques.
-Keyword-Transportation-
-PROJ001
- :Computational Modeling of Lube Oil Flows in Pipelines to Study the Efficacy of Flushing Operations
+ :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ002
- :Optimisation frameworks for integrated planning with allocation of transportation resources for industrial gas supply chains
+ :Distributed Algorithms for Mult
+Keyword-Intelligent system-
+PROJ001
+ :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+PROJ002
+ :Distributed Algorithms for Mult
 PROJ003
- :To study the integration planning and fetching graphical anlysis for different pipeline scheduling techniques.
-Keyword-Computers & Chemical Engineering-
+ :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+Keyword-Signal Processing-
+PROJ001
+ :Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
 PROJ003
- :To study the integration planning and fetching graphical anlysis for different pipeline scheduling techniques.
+ :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+Keyword-C language programming-
+PROJ004
+ :Research and Development of C Language Programming Experiment Assistant Management Platform Based on Hybrid Architecture
+Keyword-Hybrid Architecture-
+PROJ004
+ :Research and Development of C Language Programming Experiment Assistant Management Platform Based on Hybrid Architecture
+PROJ003
+ :International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+
 
 
