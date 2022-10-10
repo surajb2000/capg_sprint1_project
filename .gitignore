@@ -52,4 +52,5 @@ Mkfile.old
 dkms.conf
 
 CUT/ToolsReport/CUNIT/CUnit_Testing/bin/file.tests
+CUT/Code/data/invalid.txt
 CUT/Code/data/result.txt

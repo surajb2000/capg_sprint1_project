@@ -22,6 +22,7 @@ void *extract_project_details(void *tempfile) {
             exit(0);
         }
         fprintf(inv, "%s\n", (char *)tempfile);
+        fclose(inv);
 
     }
     // Extract details if file valid
