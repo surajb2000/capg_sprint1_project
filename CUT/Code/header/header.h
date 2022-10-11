@@ -11,7 +11,6 @@
 typedef struct project {
     char projectId[STR_SIZE];
     char projectTitle[STR_SIZE];
-    // struct project *next;
 } sp;
 
 typedef struct keyword {

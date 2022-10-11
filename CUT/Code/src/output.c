@@ -19,6 +19,7 @@ void print_output(skw *temp) {
     }
 }
 
+
 //Function to write output to the file
 int write_output(skw *temp) {
     FILE *fptr;
