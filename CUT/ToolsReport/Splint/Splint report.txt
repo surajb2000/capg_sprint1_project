@@ -1,0 +1,52 @@
+main.c
+splint -compdef -syntax  -globstate -usedef -nullpass src/main.c
+
+Splint 3.1.2 --- 21 Feb 2021
+
+< Location unknown >: Previous use of 
+Finished checking --- no warnings
+
+
+
+keyword.c
+splint -compdef -syntax  -globstate -usedef -nullpass src/keyword.c -nullret
+Splint 3.1.2 --- 21 Feb 2021
+
+< Location unknown >: Previous use of 
+src/keyword.c: (in function createNode)
+src/keyword.c:115:12: Parameter 1 (newNode->key) to function strcpy is declared
+    unique but may be aliased externally by parameter 2 (token)
+  A unique or only parameter may be aliased by some other parameter or visible
+  global. (Use -mayaliasunique to inhibit warning)
+src/keyword.c: (in function keywordSearch)
+src/keyword.c:164:9: Implicitly only storage last->next (type struct keyword *)
+    not released before assignment: last->next = createNode(p1, token)
+  A memory leak has been detected. Only-qualified storage is not released
+  before the last reference to it is lost. (Use -mustfreeonly to inhibit
+  warning)
+src/keyword.c: (in function cleanFunc)
+src/keyword.c:173:9: Only storage keywordll->next assigned to unqualified:
+                        keywordll = keywordll->next
+  The only reference to this storage is transferred to another reference (e.g.,
+  by returning it) that does not have the only annotation. This may lead to a
+  memory leak, since the new reference is not necessarily released. (Use
+  -onlytrans to inhibit warning)
+src/keyword.c:175:14: Only storage temp1->next (type struct keyword *) derived
+    from released storage is not released (memory leak): temp1
+  A storage leak due to incomplete deallocation of a structure or deep pointer
+  is suspected. Unshared storage that is reachable from a reference that is
+  being deallocated has not yet been deallocated. Splint assumes when an object
+  is passed as an out only void pointer that the outer object will be
+  deallocated, but the inner objects will not. (Use -compdestroy to inhibit
+  warning)
+
+Finished checking --- 4 code warnings
+
+
+
+output.c
+splint -compdef -syntax  -globstate -usedef -nullpass -nullret src/output.c 
+Splint 3.1.2 --- 21 Feb 2021
+
+< Location unknown >: Previous use of 
+Finished checking --- no warnings

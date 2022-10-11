@@ -54,7 +54,7 @@ void *extract_project_details(void *tempfile) {
             exit(0);
         }
         fprintf(inv, "%s\n", (char *)tempfile);
-        fclose(inv);
+        (void)fclose(inv);
 
     }
     // Extract details if file valid
@@ -73,20 +73,26 @@ void *extract_project_details(void *tempfile) {
             while (token != NULL) {
                 if (strcmp(token, project_id_str) == 0) {
                     token = strtok(NULL, "-");
-                    token[strlen(token) - 1] = '\0';
-                    strcpy(new_pro_node->projectId, token);
+                    if (token != NULL) {
+                        token[strlen(token) - 1] = '\0';
+                        strcpy(new_pro_node->projectId, token);
+                    }
                 }
 
                 else if (strcmp(token, project_title_str) == 0) {
                     token = strtok(NULL, "-");
-                    token[strlen(token) - 1] = '\0';
-                    strcpy(new_pro_node->projectTitle, token);
+                    if (token != NULL) {
+                        token[strlen(token) - 1] = '\0';
+                        strcpy(new_pro_node->projectTitle, token);
+                    }
                 }
 
                 else if (strcmp(token, keyword_str) == 0) {
                     token = strtok(NULL, "-");
-                    strcpy(keySearch, token);
-                    keywordSearch(new_pro_node, keySearch, &keywordll);
+                    if (token != NULL) {
+                        strcpy(keySearch, token);
+                        keywordSearch(new_pro_node, keySearch, &keywordll);
+                    }
                 }
 
                 token = strtok(NULL, "-");
@@ -96,9 +102,10 @@ void *extract_project_details(void *tempfile) {
     }
 
     (void)fclose(fptr);
+    return NULL;
 }
 
-//Create newnode if keyword not already present
+// Create newnode if keyword not already present
 skw *createNode(sp *p1, char token[]) {
     skw *newNode = (skw *)calloc(1, sizeof(skw));
     if (newNode == NULL) {
@@ -119,7 +126,7 @@ skw *createNode(sp *p1, char token[]) {
     return newNode;
 }
 
-//Update node if keyword is found
+// Update node if keyword is found
 void updateNode(sp *p1, skw *temp) {
 
     // lock mutex
@@ -157,7 +164,6 @@ void keywordSearch(sp *p1, char *token, skw **keywordll) {
         last->next = createNode(p1, token);
     }
 }
-
 
 // Function to free the memory at the end of program
 void cleanFunc() {

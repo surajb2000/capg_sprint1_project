@@ -21,8 +21,12 @@ int main(int argc, char **argv) {
     }
 
     //Create an empty invalid file.txt
-    FILE *ptr = fopen("data/invalid.txt", "w+");
-    fclose(ptr);
+    FILE *ptr = fopen("data/invalid.txt", "w");
+    if(ptr==NULL){
+        printf("Error in invalid.txt creation");
+        return EXIT_FAILURE;
+    }
+    (void)fclose(ptr);
 
 
     /*
@@ -43,7 +47,7 @@ int main(int argc, char **argv) {
 
     // Wait for pthread_join before resuming the program.
     for (i = 0; i < filecount; i++) {
-        pthread_join(pthreads[i], NULL);
+        (void)pthread_join(pthreads[i], NULL);
     }
 
     // Function defined in output.c to output the keyword linkedlist
@@ -56,5 +60,5 @@ int main(int argc, char **argv) {
 
 
     cleanFunc();
-    return 0;
+    return EXIT_SUCCESS;
 }
