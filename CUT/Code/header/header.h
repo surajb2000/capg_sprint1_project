@@ -26,15 +26,16 @@ typedef struct keyword {
 extern sp *projectll;
 extern skw *keywordll;
 
-void *extract_project_details(void *);
-void keywordSearch(sp *, char *, skw **);
 int validation(char *tempfile);
-int result_Valid(char *key);
-void cleanFunc();
-void updateNode(sp *, skw *);
+void *extract_project_details(void *);
+
+void keywordSearch(sp *, char *, skw **);
 skw *createNode(sp *m, char token[]);
+void updateNode(sp *, skw *);
 
 void print_output(skw *);
 int write_output(skw *);
+
+void cleanFunc();
 
 #endif
