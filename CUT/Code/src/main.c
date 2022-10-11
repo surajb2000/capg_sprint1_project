@@ -5,11 +5,12 @@
 
 #include "../header/header.h"
 
+//head pointer to keyword linked list
 skw *keywordll;
 
 int main(int argc, char **argv) {
-    keywordll = NULL;
 
+    keywordll = NULL;
     int filecount = argc - 1;
 
     // checking if arguments are provided.
@@ -19,12 +20,15 @@ int main(int argc, char **argv) {
         exit(0);
     }
 
+    //Create an empty invalid file.txt
+    FILE *ptr = fopen("data/invalid.txt", "w+");
+    fclose(ptr);
+
+
     /*
     creates a new thread for each file.
     filter and create new linklist containing valid filenames.
     */
-    FILE *ptr = fopen("data/invalid.txt", "w+");
-    fclose(ptr);
     pthread_t pthreads[filecount];
     int i;
     for (i = 0; i < filecount; i++) {
@@ -50,7 +54,7 @@ int main(int argc, char **argv) {
     if (c == EXIT_FAILURE)
         return EXIT_FAILURE;
 
-    cleanFunc();
 
+    cleanFunc();
     return 0;
 }

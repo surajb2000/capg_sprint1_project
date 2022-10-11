@@ -98,7 +98,7 @@ void *extract_project_details(void *tempfile) {
     (void)fclose(fptr);
 }
 
-
+//Create newnode if keyword not already present
 skw *createNode(sp *p1, char token[]) {
     skw *newNode = (skw *)calloc(1, sizeof(skw));
     if (newNode == NULL) {
@@ -119,6 +119,7 @@ skw *createNode(sp *p1, char token[]) {
     return newNode;
 }
 
+//Update node if keyword is found
 void updateNode(sp *p1, skw *temp) {
 
     // lock mutex
@@ -132,7 +133,10 @@ void updateNode(sp *p1, skw *temp) {
     (void)pthread_mutex_unlock(&(temp->lock));
 }
 
-
+/*
+Search for keyword and update
+If not already present create new
+*/
 void keywordSearch(sp *p1, char *token, skw **keywordll) {
     token[strlen(token) - 1] = '\0';
 
