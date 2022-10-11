@@ -25,6 +25,8 @@ int main(int argc, char **argv) {
     creates a new thread for each file.
     filter and create new linklist containing valid filenames.
     */
+    FILE *ptr = fopen("data/invalid.txt", "w+");
+    fclose(ptr);
     pthread_t pthreads[filecount];
     int i;
     for (i = 0; i < filecount; i++) {
