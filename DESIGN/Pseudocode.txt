@@ -36,7 +36,6 @@ A. File parsing and validation Function :
 B.Keyword Search function :
 
    ------START------
-keywordSearch(projectArr, keywordll)
 
 1.Travser the keyword linked list
 2.Check whether the current keyword is present 
