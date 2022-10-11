@@ -1,37 +1,37 @@
 Key-Artificial Intelligence
-PROJ003
-International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+PROJ002
+Distributed Algorithms for Multi-Resource Allocation
 PROJ001
 Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+PROJ003
+International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+
+
+Key-Computer technology
 PROJ002
-Distributed Algorithms for Mult
+Distributed Algorithms for Multi-Resource Allocation
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+
+
+Key-Intelligent system
+PROJ002
+Distributed Algorithms for Multi-Resource Allocation
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+PROJ003
+International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
+
+
+Key-Signal Processing
+PROJ001
+Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
+PROJ003
+International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
 
 
 Key-Hybrid Architecture
 PROJ003
 International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-
-
-Key-Intelligent system
-PROJ003
-International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-PROJ001
-Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
-PROJ002
-Distributed Algorithms for Mult
-
-
-Key-Signal Processing
-PROJ003
-International Journal of Emerging Multidisciplinaries: An Application to Computer Science via New Fixed Point Technique
-PROJ001
-Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
-
-
-Key-Computer technology
-PROJ001
-Design of the Artificial Intelligence Vocal System for Music Education by Using Speech Recognition Simulation
-PROJ002
-Distributed Algorithms for Mult
 
 

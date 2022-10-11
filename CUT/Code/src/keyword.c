@@ -72,7 +72,7 @@ void *extract_project_details(void *tempfile) {
             token = strtok(str, "-");
             while (token != NULL) {
                 if (strcmp(token, project_id_str) == 0) {
-                    token = strtok(NULL, "-");
+                    token = strtok(NULL, "\n");
                     if (token != NULL) {
                         token[strlen(token) - 1] = '\0';
                         strcpy(new_pro_node->projectId, token);
@@ -80,7 +80,7 @@ void *extract_project_details(void *tempfile) {
                 }
 
                 else if (strcmp(token, project_title_str) == 0) {
-                    token = strtok(NULL, "-");
+                    token = strtok(NULL, "\n");
                     if (token != NULL) {
                         token[strlen(token) - 1] = '\0';
                         strcpy(new_pro_node->projectTitle, token);
@@ -88,7 +88,7 @@ void *extract_project_details(void *tempfile) {
                 }
 
                 else if (strcmp(token, keyword_str) == 0) {
-                    token = strtok(NULL, "-");
+                    token = strtok(NULL, "\n");
                     if (token != NULL) {
                         strcpy(keySearch, token);
                         keywordSearch(new_pro_node, keySearch, &keywordll);
