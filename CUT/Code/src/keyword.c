@@ -48,7 +48,7 @@ void *extract_project_details(void *tempfile) {
     // Check for Valid text file according to guides lines
     else if (validation((char *)tempfile) == 0) {
         printf("\nError! File invalid <%s>\n", (char *)tempfile);
-        FILE *inv = fopen("data/invalid.txt", "w+");
+        FILE *inv = fopen("data/invalid.txt", "a+");
         if (inv == NULL) {
             printf("File Error");
             exit(0);

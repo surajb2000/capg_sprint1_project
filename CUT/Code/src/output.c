@@ -23,7 +23,7 @@ void print_output(skw *temp) {
 //Function to write output to the file
 int write_output(skw *temp) {
     FILE *fptr;
-    fptr = fopen("data/result.txt", "w");
+    fptr = fopen("data/keywordProject.txt", "w");
     if (!fptr) {
         printf("\nerror");
         return EXIT_FAILURE;
