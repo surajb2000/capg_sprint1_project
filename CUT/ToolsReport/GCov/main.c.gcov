@@ -1,0 +1,69 @@
+        -:    0:Source:src/main.c
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:1
+        -:    0:Source is newer than graph
+        -:    1:#include <pthread.h>
+        -:    2:#include <stdio.h>
+        -:    3:#include <stdlib.h>
+        -:    4:#include <string.h>
+        -:    5:
+        -:    6:#include "../header/header.h"
+        -:    7:
+        -:    8://head pointer to keyword linked list
+        -:    9:skw *keywordll;
+        1:   10:
+        1:   11:int main(int argc, char **argv) {
+        -:   12:
+        1:   13:    keywordll = NULL;
+        -:   14:    int filecount = argc - 1;
+        -:   15:
+        1:   16:    // checking if arguments are provided.
+    #####:   17:    if (filecount < 1) {
+    #####:   18:        printf("Please provide  filename as argument!\n");
+    #####:   19:        printf("Usage ./main <Research Papaer file1> <Research Papaer file2> ...\n");
+        -:   20:        exit(0);
+        -:   21:    }
+        -:   22:
+        -:   23:    //Create an empty invalid file.txt
+        -:   24:    FILE *ptr = fopen("data/invalid.txt", "w");
+        -:   25:    if(ptr==NULL){
+        1:   26:        printf("Error in invalid.txt creation");
+        -:   27:        return EXIT_FAILURE;
+        4:   28:    }
+        3:   29:    (void)fclose(ptr);
+        -:   30:
+        -:   31:
+        3:   32:    /*
+    #####:   33:    creates a new thread for each file.
+    #####:   34:    filter and create new linklist containing valid filenames.
+        -:   35:    */
+        -:   36:    pthread_t pthreads[filecount];
+        -:   37:    int i;
+        -:   38:    for (i = 0; i < filecount; i++) {
+        4:   39:        int ret = pthread_create(&pthreads[i], NULL, extract_project_details, (void *)(argv[i + 1]));
+        3:   40:
+        -:   41:        // check if thread created for return value
+        -:   42:        if (ret != 0) {
+        -:   43:            printf("\nError! Thread creation falied! Return code from is: %d\n", ret);
+        1:   44:            exit(0);
+        -:   45:        }
+        -:   46:    }
+        1:   47:
+        1:   48:    // Wait for pthread_join before resuming the program.
+    #####:   49:    for (i = 0; i < filecount; i++) {
+        -:   50:        (void)pthread_join(pthreads[i], NULL);
+        1:   51:    }
+        -:   52:
+        1:   53:    // Function defined in output.c to output the keyword linkedlist
+        -:   54:    print_output(keywordll);
+        -:   55:
+        -:   56:    // Function defined in output.c to write the output to a file
+        -:   57:    int c = write_output(keywordll);
+        -:   58:    if (c == EXIT_FAILURE)
+        -:   59:        return EXIT_FAILURE;
+        -:   60:
+        -:   61:
+        -:   62:    cleanFunc();
+        -:   63:    return EXIT_SUCCESS;
+        -:   64:}
